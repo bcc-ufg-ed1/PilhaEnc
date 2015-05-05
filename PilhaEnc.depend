@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1400124525 source:d:\disciplinas_ministradas\ufg\2014\2014-1\estruturadedados1-ed1\material_aulas\aula9-pilha-encadeada\pilhaenc\pilhaenc.c
+	<stdlib.h>
+	"PilhaEnc.h"
+
+1400124517 d:\disciplinas_ministradas\ufg\2014\2014-1\estruturadedados1-ed1\material_aulas\aula9-pilha-encadeada\pilhaenc\pilhaenc.h
+
+1400124942 source:d:\disciplinas_ministradas\ufg\2014\2014-1\estruturadedados1-ed1\material_aulas\aula9-pilha-encadeada\pilhaenc\usapilha.c
+	<stdio.h>
+	"PilhaEnc.h"
+
