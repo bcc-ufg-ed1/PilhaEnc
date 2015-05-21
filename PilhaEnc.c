@@ -7,6 +7,7 @@ PilhaEnc* criarPilha() {
     if (pilha == NULL)
         return NULL;
 	pilha->topo = NULL;
+	pilha->tam=0;
 	return pilha;
 }
 
@@ -22,6 +23,8 @@ int empilhar(int item, PilhaEnc* pilha) {
         return ESTRUTURA_NAO_INICIALIZADA;
 	No *no = criarNo(item, pilha->topo);
 	pilha->topo = no;
+    pilha->tam++;
+	return OK;
 }
 
 int estahVazia(PilhaEnc *pilha) {
@@ -41,6 +44,7 @@ int desempilhar(PilhaEnc* pilha, int* item) {
     *item = aux->item;
 	free(aux);
 	aux = NULL;
+	pilha->tam--;
 	return OK;
 }
 
@@ -74,4 +78,10 @@ int liberarPilha(PilhaEnc* pilha) {
 	free(pilha);
 	pilha = NULL;
 	return OK;
+}
+int obterTamanho(PilhaEnc* pilha,int*item){
+    if (pilha == NULL)
+        return ESTRUTURA_NAO_INICIALIZADA;
+    *item = pilha->tam;
+    return OK;
 }
