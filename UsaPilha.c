@@ -23,6 +23,7 @@ int main() {
     empilhar(2, minhaPilha);
     empilhar(3, minhaPilha);
     imprimirPilha(minhaPilha);
-    liberarPilha(minhaPilha);
+    PilhaEnc* novaPilha=clonePilha(minhaPilha);
+    imprimirPilha(novaPilha);
     return EXIT_SUCCESS;
 }

@@ -23,5 +23,5 @@ int estahVazia(PilhaEnc* pilha);
 int empilhar(int item, PilhaEnc* pilha);
 int desempilhar(PilhaEnc* pilha, int* item);
 int obterTopo(PilhaEnc* pilha, int* item);
-
+PilhaEnc* clonePilha(PilhaEnc* pilha);
 #endif // PILHA_ENC_H
