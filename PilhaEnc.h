@@ -15,6 +15,7 @@ typedef struct {
 
 typedef struct {
   No* topo;
+  int tam;
 } PilhaEnc;
 
 PilhaEnc* criarPilha();
@@ -23,5 +24,5 @@ int estahVazia(PilhaEnc* pilha);
 int empilhar(int item, PilhaEnc* pilha);
 int desempilhar(PilhaEnc* pilha, int* item);
 int obterTopo(PilhaEnc* pilha, int* item);
-
+int obterTamanho(PilhaEnc* pilha,int* item);
 #endif // PILHA_ENC_H

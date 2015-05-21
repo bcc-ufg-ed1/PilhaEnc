@@ -18,11 +18,14 @@ void imprimirPilha(PilhaEnc* p) {
 }
 
 int main() {
+    int tamanho;
     PilhaEnc* minhaPilha = criarPilha();
-    empilhar(1, minhaPilha);
-    empilhar(2, minhaPilha);
-    empilhar(3, minhaPilha);
-    imprimirPilha(minhaPilha);
+    //empilhar(1, minhaPilha);
+    //empilhar(2, minhaPilha);
+    //empilhar(3, minhaPilha);
+    obterTamanho(minhaPilha,&tamanho);
+    printf("%d\n",tamanho);
+    //imprimirPilha(minhaPilha);
     liberarPilha(minhaPilha);
     return EXIT_SUCCESS;
 }

@@ -9,3 +9,15 @@
 	<stdio.h>
 	"PilhaEnc.h"
 
+1432242584 source:/home/guilherme/Documentos/CDC-03/ED1/EstruturasEnc/PilhaEnc/PilhaEnc.c
+	<stdio.h>
+	<stdlib.h>
+	"PilhaEnc.h"
+
+1432242532 /home/guilherme/Documentos/CDC-03/ED1/EstruturasEnc/PilhaEnc/PilhaEnc.h
+
+1432242638 source:/home/guilherme/Documentos/CDC-03/ED1/EstruturasEnc/PilhaEnc/UsaPilha.c
+	<stdio.h>
+	<stdlib.h>
+	"PilhaEnc.h"
+
