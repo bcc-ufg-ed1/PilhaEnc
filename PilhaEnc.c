@@ -75,3 +75,23 @@ int liberarPilha(PilhaEnc* pilha) {
 	pilha = NULL;
 	return OK;
 }
+PilhaEnc* clonePilha(PilhaEnc* pilha){
+    if(pilha==NULL) return NULL;
+    PilhaEnc* novaPilhaAux = criarPilha();
+    No* aux = pilha->topo;
+    while(aux!=NULL){
+        empilhar(aux->item,novaPilhaAux);
+        aux=aux->prox;
+    }
+    PilhaEnc* novaPilha = criarPilha();
+    aux=novaPilhaAux->topo;
+    while(aux!=NULL){
+        empilhar(aux->item,novaPilha);
+        aux=aux->prox;
+    }
+    liberarPilha(novaPilhaAux);
+    free(aux);
+    return novaPilha;
+
+}
+
