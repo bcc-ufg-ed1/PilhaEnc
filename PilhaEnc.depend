@@ -9,3 +9,21 @@
 	<stdio.h>
 	"PilhaEnc.h"
 
+1429666290 source:d:\disciplinas_ministradas\ufg\2015\2015-1\estruturadedados1-ed1\material\semana7-pilha-encadeada\pilhaenc\usapilha.c
+	<stdio.h>
+	<stdlib.h>
+	"PilhaEnc.h"
+
+1429665653 d:\disciplinas_ministradas\ufg\2015\2015-1\estruturadedados1-ed1\material\semana7-pilha-encadeada\pilhaenc\pilhaenc.h
+
+1430826454 source:d:\disciplinas_ministradas\ufg\2015\2015-1\estruturadedados1-ed1\material\semana7-pilha-encadeada\pilhaenc\pilhaenc.c
+	<stdio.h>
+	<stdlib.h>
+	"PilhaEnc.h"
+
+1430911961 source:d:\disciplinas_ministradas\ufg\2015\2015-1\estruturadedados1-ed1\material\semana7-pilha-encadeada\pilhaenc\posfixa.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"PilhaEnc.h"
+

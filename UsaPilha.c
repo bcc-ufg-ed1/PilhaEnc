@@ -8,20 +8,20 @@ void imprimirPilha(PilhaEnc* p) {
     while(!estahVazia(p)) {
         desempilhar(p, &item);
         printf("%d\n", item);
-        empilhar(item, pAux);
+        empilhar(pAux, item);
     }
     while(!estahVazia(pAux)) {
         desempilhar(pAux, &item);
-        empilhar(item, p);
+        empilhar(p, item);
     }
     liberarPilha(pAux);
 }
 
 int main() {
     PilhaEnc* minhaPilha = criarPilha();
-    empilhar(1, minhaPilha);
-    empilhar(2, minhaPilha);
-    empilhar(3, minhaPilha);
+    empilhar(minhaPilha, 1);
+    empilhar(minhaPilha, 2);
+    empilhar(minhaPilha, 3);
     imprimirPilha(minhaPilha);
     liberarPilha(minhaPilha);
     return EXIT_SUCCESS;
